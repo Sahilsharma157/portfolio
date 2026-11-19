@@ -9,7 +9,7 @@ export const site = {
   role: 'AI/ML & Full-stack Developer',
   location: 'Chennai, India',
   timezone: 'Asia/Kolkata',
-  email: 'hello@yourdomain.com', // ← your email
+  email: 'kksahilsharmaaa@gmail.com',
   available: true,
   status: 'Open to opportunities',
 
