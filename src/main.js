@@ -8,6 +8,7 @@ import { renderSite } from './render.js';
 import { createScene } from './scene.js';
 import { initCursor, initMagnetic, initWorkRows, initMarquee, initClock } from './interactions.js';
 import { initTerminal } from './terminal.js';
+import { initProjectModal } from './projectModal.js';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -217,6 +218,10 @@ async function init() {
   initMarquee(() => (lenis ? lenis.velocity : 0));
   initClock(site.timezone);
   const cursorEl = document.querySelector('.cursor');
+  initProjectModal(site.projects, {
+    onOpen: () => lenis?.stop(),
+    onClose: () => lenis?.start(),
+  });
   initTerminal(site, {
     onOpen: () => { lenis?.stop(); cursorEl.style.display = 'none'; },
     onClose: () => { lenis?.start(); cursorEl.style.display = ''; },

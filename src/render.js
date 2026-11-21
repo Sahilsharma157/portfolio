@@ -84,7 +84,7 @@ export function renderSite(s) {
         ${s.projects
           .map(
             (p, i) => `<li class="work__item" data-reveal style="--c1:${p.colors[0]}">
-            <a href="${p.link}" ${p.link.startsWith('http') ? 'target="_blank" rel="noopener"' : ''} data-cursor="Open">
+            <a href="${p.link || p.code || '#work'}" data-cursor="View" data-index="${i}" aria-haspopup="dialog">
               <span class="work__fill" aria-hidden="true"></span>
               <span class="work__num mono">${pad(i + 1)}</span>
               <span class="work__title display">${p.title}</span>

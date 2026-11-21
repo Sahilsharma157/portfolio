@@ -57,16 +57,27 @@ export const site = {
   ],
 
   // colors[0] is the row's hover fill color. Use a light-ish color so the dark text stays readable.
-  // link: your GitHub repo or live demo URL.
+  // link: live site · code: repo · images: screenshots in /public/work/ (shown in the project modal)
   projects: [
     {
       title: 'Neptune AI',
       description: 'Turns plain-English requests into blockchain payments, staking and automated transactions.',
       tags: ['Python', 'FastAPI', 'Next.js', 'AI Agents', 'NEAR'],
       year: '2026',
-      link: 'https://github.com/Sahilsharma157', // ← swap for the Neptune AI repo or demo
+      link: 'https://neptuneai-agent.vercel.app/',
+      code: '',
       colors: ['#ff5b29', '#2a0f08'],
-      image: null,
+      images: ['/work/neptune-2.jpg', '/work/neptune-1.jpg'],
+      overview:
+        'An AI agent that turns natural-language requests into real blockchain workflows: payments, staking and automated transactions on NEAR.',
+      built: [
+        'Chat interface where users swap tokens or instruct their agents in plain English',
+        'Agent Suite: a multi-agent fleet on NEAR, with trader, moderator (risk), research and rebalancing agents',
+        'Agent Marketplace where users buy ready-made trading agents with USDT, verified on-chain',
+        'Natural-language intent handling that maps a request to the right on-chain action',
+        'Python FastAPI backend connected to a Next.js frontend and NEAR blockchain services',
+        'Delegated agent-wallet model so the agent can run authorized, automated operations',
+      ],
     },
     {
       title: 'Vstream',
@@ -74,8 +85,18 @@ export const site = {
       tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind v4'],
       year: '',
       link: 'https://vstream-lilac.vercel.app/',
+      code: '',
       colors: ['#f2c46b', '#241a08'],
-      image: null,
+      images: ['/work/vstream-1.jpg', '/work/vstream-2.jpg'],
+      overview:
+        'A production-ready platform for discovering and watching live events across tech, music, gaming, sports and education. Fully client-side, with no backend or API dependencies.',
+      built: [
+        'Featured home page and a browse catalogue with instant search by title and description',
+        'Live indicators, viewer counts and event times shown in the visitor’s timezone',
+        'Favorites saved to localStorage, plus native share support',
+        'Light and dark themes, a top progress loader and a mobile-first layout',
+        '100% custom components in strict TypeScript, with no UI libraries',
+      ],
     },
     {
       title: 'XenoPulse',
@@ -83,8 +104,16 @@ export const site = {
       tags: ['Next.js', 'TypeScript', 'Supabase', 'Claude AI'],
       year: '',
       link: 'https://xenopulse-blond.vercel.app/',
+      code: '',
       colors: ['#c9a3ff', '#160d22'],
-      image: null,
+      images: ['/work/xenopulse-1.jpg', '/work/xenopulse-2.jpg'],
+      overview:
+        'An AI-native marketing CRM that watches customer data and suggests who to reach, when and why. Customer data, campaigns and performance tracking live in one place.',
+      built: [
+        'Customer data import (CSV / Excel), smart segmentation and campaign workflows',
+        'AI opportunity feed and personalised content generation powered by Claude',
+        'Live analytics for campaign insights and engagement tracking',
+      ],
     },
     {
       title: 'RootAccess',
@@ -92,8 +121,16 @@ export const site = {
       tags: ['Auth', 'REST APIs', 'Sessions'],
       year: '',
       link: 'https://rootaccessv2.vercel.app/',
+      code: '',
       colors: ['#86d4db', '#0b2226'],
-      image: null,
+      images: ['/work/rootaccess-1.jpg', '/work/rootaccess-2.jpg'],
+      overview:
+        'A privacy-focused community where developer students find people with shared interests, join groups, chat in real time and find collaborators.',
+      built: [
+        'User authentication, profiles and secure content workflows',
+        'Interest-based groups, real-time group chat and direct messages',
+        'REST APIs, backend services and secure session handling',
+      ],
     },
   ],
 
